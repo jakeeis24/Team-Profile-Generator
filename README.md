@@ -40,7 +40,7 @@ To run the application, after you have installed the dependencies, simply run 'n
 
 My Github username is jakeeis24
 
-Link to my Github profile: jakeeis24
+Link to my Github profile: https://github.com/jakeeis24
 
 Questions? Email me: jakeeissler1@gmail.com
 
