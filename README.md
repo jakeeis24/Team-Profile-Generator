@@ -4,6 +4,8 @@
 
 This command line application allows the user to generate cards for all of their employees.
 
+[Walkthrough Video](https://drive.google.com/file/d/1Svpp3fkK_VlD41uqwmt-dl588imoapDI/view)
+
 # Table of Contents
 
 [Installation](#instructions)
