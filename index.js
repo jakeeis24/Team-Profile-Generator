@@ -134,7 +134,7 @@ function generateHTML() {
             employee.officeNumber || employee.github || employee.school
           )
         )
-        .join("\n")}
+        .join("")}
     </div>
 
     <script
