@@ -58,6 +58,36 @@ const employeePrompt = [
 const employees = [];
 
 //manager prompt
+
+function newEmployee() {
+  prompt({
+    message: "Do you want to add another employee or create the roster?",
+    type: "list",
+    name: "choice",
+    choices: ["Add another employee", "Create the roster"],
+  }).then((data) => {
+    console.log(`You chose to ==>`, data.choice);
+    if (data.choice === "Add another employee") {
+      //WHY YOU NO WORK
+      prompt(employeePrompt).then((data) => {
+        console.log("Employee answers --", data);
+        if (data.role === "Engineer") {
+          const eng = new Engineer(data.name, data.id, data.email, data.extra);
+          employees.push(eng);
+        } else {
+          const int = new Intern(data.name, data.id, data.email, data.extra);
+          employees.push(int);
+        }
+        console.log(
+          `Your ${data.role}, ${data.name}, has been added to the roster!`
+        );
+        setTimeout(newEmployee, 2000);
+      });
+    } else {
+      generateHTML();
+    }
+  });
+}
 function managerInit() {
   //create manager
   prompt(managerPrompt).then((data) => {
@@ -76,31 +106,4 @@ function managerInit() {
   });
 }
 managerInit();
-function newEmployee() {
-  prompt({
-    message: "Do you want to add another employee or create the roster?",
-    type: "list",
-    name: "choice",
-    choices: ["Add another employee", "Create the roster"],
-  }).then((data) => {
-    console.log(`You chose to ==>`, data.choice);
-    if (data.choice === "Add another employee") {
-      prompt(employeePrompt).then((data) => {
-        console.log("Employee answers --", data);
-        if (data.role === "Engineer") {
-          const eng = new Engineer(data.name, data.id, data.email, data.extra);
-          employees.push(eng);
-        } else {
-          const int = new Intern(data.name, data.id, data.email, data.extra);
-          employees.push(int);
-        }
-        console.log(
-          `Your ${data.role}, ${data.name}, has been added to the roster!`
-        );
-      });
-    } else {
-      generateHTML();
-    }
-  });
-}
 //function generateHTML() {} //TODO
