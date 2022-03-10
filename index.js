@@ -122,6 +122,28 @@ function generateHTML() {
       crossorigin="anonymous"
     />
     <title>Team Roster</title>
+    <style>
+      p {
+        margin-bottom: 0.5rem;
+        border: 1px solid grey;
+        padding: 0.5rem;
+      }
+      h5 {
+        font-size: 1.5rem;
+      }
+      h4 {
+        font-size: 2rem;
+      }
+      .jumbotron {
+        padding: 1rem 1rem;
+        background: red;
+        margin-bottom: 1rem;
+      }
+      .card-body {
+        background-color: aqua;
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
     <div class="jumbotron text-center my-5">
