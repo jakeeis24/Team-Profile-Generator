@@ -1,6 +1,7 @@
 # Team Profile Generator
 
 \*\*Updated 03/10/22 to fix the wonky looking github and email links. Screenshot at bottom of the page to compare to original html from the walkthrough video. Output html still needs styling.
+\*\* Styling added as well. See styledOutput.html and screenshot at the bottom of this page.
 
 # Description
 
@@ -57,3 +58,6 @@ No license associated with this repository.
 # UPDATED Output
 
 ![alt text](./images/NEW-output.jpg)
+
+#UPDATED Output with styling
+![alt text](./images/styledOutput.jpg)
