@@ -1,5 +1,7 @@
 # Team Profile Generator
 
+\*\*Updated 03/10/22 to fix the wonky looking github and email links. Screenshot at bottom of the page to compare to original html from the walkthrough video. Output html still needs styling.
+
 # Description
 
 This command line application allows the user to generate cards for all of their employees.
@@ -51,3 +53,7 @@ No license associated with this repository.
 # Demo Screenshot
 
 ![alt text](./images/output-img.jpg)
+
+# UPDATED Output
+
+![alt text](./images/NEW-output.jpg)
